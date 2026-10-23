@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Profile Saya</title>
+
+  <style>
+    
+    * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body {
+    background-color: #f4f6f9;
+    padding: 15px;
+    color: #333;
+    }
+    .container {
+    max-width: 750px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    border: 2px solid #222222;
+    padding: 20px;
+    }
+    header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 15px;
+    }
+    .header-left {
+    display: flex;
+    gap: 15px;
+    }
+    .profile-img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border: 2px solid #222222;
+    }
+    .bio-header h2 {
+    font-size: 20px;
+    margin-bottom: 6px;
+    }
+    .bio-header p {
+    font-size: 13px;
+    line-height: 1.4;
+    }
+    .categories h3 {
+    font-size: 14px;
+    text-align: right;
+    margin-bottom: 4px;
+    text-decoration: underline;
+    }
+    .categories ul {
+    list-style: none;
+    text-align: right;
+    }
+    .categories li a {
+    text-decoration: none;
+    color: #000;
+    font-size: 12px;
+    line-height: 1.5;
+    font-weight: bold;
+    }
+    .categories li a:hover {
+    color: #007bff;
+    }
+    .divider {
+    margin: 18px 0;
+    border: 0;
+    border-top: 1px solid #ccc;
+    }
+    article {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 25px;
+    font-size: 13px;
+    line-height: 1.6;
+    text-align: justify;
+    }
+    .multimedia-bottom {
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+    align-items: stretch;
+    }
+    .media-item {
+    flex: 1;
+    }
+    .media-item video {
+    width: 100%;
+    height: 110px;
+    border: 2px solid #222222;
+    background-color: #000;
+    }
+    .photo-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4px;
+    border: 2px solid #222222;
+    padding: 4px;
+    background-color: #fff;
+    height: 110px;
+    }
+    .photo-grid img {
+    width: 100%;
+    height: 48px;
+    object-fit: cover;
+    border: 1px solid #555;
+    }
+    .attachments fieldset {
+    border: 1px solid #222222;
+    padding: 8px;
+    height: 110px;
+    font-size: 11px;
+    }
+    .attachments legend {
+    font-size: 11px;
+    font-weight: bold;
+    padding: 0 4px;
+    }
+    .attachments ul {
+    list-style: none;
+    }
+    .attachments li {
+    margin-bottom: 3px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    }
+    .attachments a {
+    color: blue;
+    text-decoration: underline;
+    }
+    footer {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 11px;
+    color: #666;
+    }
+
+  </style>
+  
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <div class="header-left">
+                <img src="assest/fotodiri.jpg" alt="Foto Diri" class="profile-img">
+                <div class="bio-header">
+                    <h2>Devina</h2>
+                    <p>Jl. Akses UI, Kelapa Dua, Depok</p>
+                    <p>Email: <a href="mailto:devina@email.com">devina@email.com</a></p>
+                    <p>Telepon: 081234567890</p>
+                </div>
+            </div>
+
+            <nav class="categories">
+                <h3>Categories</h3>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Gallery</a></li>
+                    <li><a href="#">Download</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <hr class="divider">
+        <article>
+            <p>Saya adalah seorang mahasiswa Teknik Informatika yang memiliki ketertarikan mendalam pada bidang keamanan siber dan perancangan web. Saat ini saya fokus mengasah kemampuan dalam memahami struktur antarmuka HTML/CSS serta logika pemrograman dasar.</p>
+            
+            <p>Melalui praktikum Desain UI/UX dan Pemrograman Web ini, saya bertujuan untuk menguasai penyusunan tata letak halaman yang bersih, terstruktur, responsif, serta mudah diakses dari berbagai perangkat.</p>
+        </article>
+      
+        <aside class="multimedia-bottom">
+            <div class="media-item">
+                <video controls playsinline>
+                    <source src="assest/video1.mp4" type="video/mp4">
+                    Browser tidak mendukung video.
+                </video>
+            </div>
+
+            <div class="media-item">
+                <div class="photo-grid">
+                    <img src="assest/foto1.jpg" alt="Foto 1">
+                    <img src="assest/foto2.jpg" alt="Foto 2">
+                    <img src="assest/foto1.jpg" alt="Foto 3">
+                    <img src="assest/foto2.jpg" alt="Foto 4">
+                </div>
+            </div>
+
+            <div class="media-item attachments">
+                <fieldset>
+                    <legend>Attachments</legend>
+                    <ul>
+                        <li><a href="assest/cv devina.pdf" download>Download CV</a></li>
+                        <li><a href="assest/sertifikat devina.pdf" download>Download sertifikat</a></li>
+                    </ul>
+                </fieldset>
+            </div>
+        </aside>
+
+        <footer>
+            <p>&copy; 2026 Web Profile Praktikum Layout</p>
+        </footer>
+
+    </div> 
+
+</body>
+</html>
